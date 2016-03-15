@@ -112,7 +112,7 @@
 
   self.wkWebView = [self newCordovaWKWebViewWithFrame:webViewBounds wkWebViewConfig:config];
   self.wkWebView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
-
+  self.wkWebView.allowsBackForwardNavigationGestures = YES;
 /*
 #ifdef __IPHONE_9_0
   // 3D touch-triggered URL preview feature -
